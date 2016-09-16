@@ -1,0 +1,43 @@
+{
+	"music_volume": 75,
+	"sfx_volume": 128,
+	"music_track" : "assets/music/soundtrack.mp3",
+	"sfx_list": [
+		{	
+			"sfx_name" : "COMBO1", 
+			"sfx_asset":"assets/sfx/Combo1.wav"
+		},
+		{	
+			"sfx_name" : "COMBO2", 
+			"sfx_asset":"assets/sfx/Combo2.wav"
+		},
+		{	
+			"sfx_name" : "COMBO3", 
+			"sfx_asset":"assets/sfx/Combo3.wav"
+		},
+		{	
+			"sfx_name" : "GEM", 
+			"sfx_asset":"assets/sfx/GemLand.wav"
+		},
+		{	
+			"sfx_name" : "REMOVE_CHAIN", 
+			"sfx_asset":"assets/sfx/RemoveChain.wav"
+		},
+		{	
+			"sfx_name" : "SWAP_FAILED", 
+			"sfx_asset":"assets/sfx/SwapFailed.wav"
+		},
+		{	
+			"sfx_name" : "SWAP_SUCCESS", 
+			"sfx_asset":"assets/sfx/SwapSuccess.wav"
+		},
+		{	
+			"sfx_name" : "TIME_WARNING", 
+			"sfx_asset":"assets/sfx/TimeWarning.wav"
+		},
+		{	
+			"sfx_name" : "YOU_WIN", 
+			"sfx_asset":"assets/sfx/YouWin.wav"
+		}
+	]
+}
