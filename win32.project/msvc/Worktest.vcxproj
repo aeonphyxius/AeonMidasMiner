@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A355810E-BD4D-42D6-A615-209F44E8FB2F}</ProjectGuid>
+    <RootNamespace>Worktest</RootNamespace>
+    <ProjectName>AeonMidasMiner</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)../external/include/jansson;$(SolutionDir)../external/include;$(SolutionDir)include;$(SolutionDir)..\src\audio;$(SolutionDir)..\src\core;$(SolutionDir)..\src\display;$(SolutionDir)..\src\events;$(SolutionDir)..\src\map;$(SolutionDir)..\src\tween;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)../external/lib;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)../external/include/jansson;$(SolutionDir)../external/include;$(SolutionDir)include;$(SolutionDir)..\src\audio;$(SolutionDir)..\src\core;$(SolutionDir)..\src\display;$(SolutionDir)..\src\events;$(SolutionDir)..\src\map;$(SolutionDir)..\src\tween;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\../external\lib\;$(LibraryPath);</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>jansson.lib;opengl32.lib;glew32.lib;glew32s.lib;SDL2_mixer.lib;SDL2.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /i /e "$(SolutionDir)..\assets" $(OutDir)assets
+xcopy /Y /i /e "$(SolutionDir)..\external\dll" $(OutDir)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>jansson.lib;opengl32.lib;glew32.lib;glew32s.lib;SDL2_mixer.lib;SDL2.lib;SDL2_image.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /Y /i /e "$(SolutionDir)..\assets" $(OutDir)assets
+xcopy /Y /i /e "$(SolutionDir)..\external\dll" $(OutDir)</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y /i /e "$(SolutionDir)..\assets" $(OutDir)..\assets</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\external\include\aeonlib\Engine.cpp" />
+    <ClCompile Include="..\..\external\include\aeonlib\Font.cpp" />
+    <ClCompile Include="..\..\external\include\aeonlib\GlContext.cpp" />
+    <ClCompile Include="..\..\external\include\aeonlib\Sdl.cpp" />
+    <ClCompile Include="..\..\external\include\aeonlib\SdlSurface.cpp" />
+    <ClCompile Include="..\..\external\include\aeonlib\SdlWindow.cpp" />
+    <ClCompile Include="..\..\src\audio\Audio.cpp" />
+    <ClCompile Include="..\..\src\audio\AudioImp.cpp" />
+    <ClCompile Include="..\..\src\audio\SoundManager.cpp" />
+    <ClCompile Include="..\..\src\core\InputManager.cpp" />
+    <ClCompile Include="..\..\src\core\MidasGame.cpp" />
+    <ClCompile Include="..\..\src\core\ScoreManager.cpp" />
+    <ClCompile Include="..\..\src\core\ServiceManager.cpp" />
+    <ClCompile Include="..\..\src\core\Timer.cpp" />
+    <ClCompile Include="..\..\src\display\DisplayObject.cpp" />
+    <ClCompile Include="..\..\src\display\ExitControl.cpp" />
+    <ClCompile Include="..\..\src\display\GameObject.cpp" />
+    <ClCompile Include="..\..\src\display\GameScene.cpp" />
+    <ClCompile Include="..\..\src\display\ScorePanel.cpp" />
+    <ClCompile Include="..\..\src\display\SfxControl.cpp" />
+    <ClCompile Include="..\..\src\display\SoundControl.cpp" />
+    <ClCompile Include="..\..\src\display\TextObject.cpp" />
+    <ClCompile Include="..\..\src\display\TimerControl.cpp" />
+    <ClCompile Include="..\..\src\display\TouchObject.cpp" />
+    <ClCompile Include="..\..\src\events\EventManager.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\map\Board.cpp" />
+    <ClCompile Include="..\..\src\map\BoardManager.cpp" />
+    <ClCompile Include="..\..\src\tween\MoveTo.cpp" />
+    <ClCompile Include="..\..\src\tween\ScaleTo.cpp" />
+    <ClCompile Include="..\..\src\unittest\AudioImplTest.cpp" />
+    <ClCompile Include="..\..\src\unittest\EventManagerTest.cpp" />
+    <ClCompile Include="..\..\src\unittest\ServiceManagerTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\external\include\aeonlib\Engine.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\Font.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\GlContext.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\Sdl.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\SdlSurface.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\SdlWindow.h" />
+    <ClInclude Include="..\..\external\include\aeonlib\Updater.h" />
+    <ClInclude Include="..\..\src\audio\Audio.h" />
+    <ClInclude Include="..\..\src\audio\AudioImp.h" />
+    <ClInclude Include="..\..\src\audio\SoundManager.h" />
+    <ClInclude Include="..\..\src\core\InputManager.h" />
+    <ClInclude Include="..\..\src\core\MidasGame.h" />
+    <ClInclude Include="..\..\src\core\ScoreManager.h" />
+    <ClInclude Include="..\..\src\core\ServiceManager.h" />
+    <ClInclude Include="..\..\src\core\Timer.h" />
+    <ClInclude Include="..\..\src\display\DisplayObject.h" />
+    <ClInclude Include="..\..\src\display\ExitControl.h" />
+    <ClInclude Include="..\..\src\display\GameObject.h" />
+    <ClInclude Include="..\..\src\display\GameScene.h" />
+    <ClInclude Include="..\..\src\display\ScorePanel.h" />
+    <ClInclude Include="..\..\src\display\SfxControl.h" />
+    <ClInclude Include="..\..\src\display\SoundControl.h" />
+    <ClInclude Include="..\..\src\display\TextObject.h" />
+    <ClInclude Include="..\..\src\display\TimerControl.h" />
+    <ClInclude Include="..\..\src\display\TouchObject.h" />
+    <ClInclude Include="..\..\src\events\EventData.h" />
+    <ClInclude Include="..\..\src\events\EventManager.h" />
+    <ClInclude Include="..\..\src\events\GameEvents.h" />
+    <ClInclude Include="..\..\src\events\GenericDelegate.h" />
+    <ClInclude Include="..\..\src\map\Board.h" />
+    <ClInclude Include="..\..\src\map\BoardManager.h" />
+    <ClInclude Include="..\..\src\tween\Ease.h" />
+    <ClInclude Include="..\..\src\tween\MoveTo.h" />
+    <ClInclude Include="..\..\src\tween\ScaleTo.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{22db53a0-d116-41e1-a42e-ea07f6f6816a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{e4d4665a-86dd-4c4b-9a5a-05601d05f73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\display">
+      <UniqueIdentifier>{c9be94d8-8add-4b1a-8290-cd3a12922c3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\unittest">
+      <UniqueIdentifier>{245c795f-bea9-45e5-8966-d7acb61d7529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\display">
+      <UniqueIdentifier>{ebe00e33-04a8-4595-ad9e-60773c8b1275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\display\ui">
+      <UniqueIdentifier>{10c26bc0-1f1d-469b-aad7-c09b893053f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\display\ui">
+      <UniqueIdentifier>{724a225f-5f92-4376-a794-72b7e1b0bc0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\map">
+      <UniqueIdentifier>{f3559031-df3b-4be6-896e-b36c3fcc31d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{d4cfdfb0-d22b-409c-9a67-73195cb636ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\events">
+      <UniqueIdentifier>{edbe6339-7561-4f39-b982-a95a776debc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\events">
+      <UniqueIdentifier>{2a26f71b-c26b-412a-a5cb-8b289cac8f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{9e6c2364-6612-4131-9296-4b27dd99522a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tween">
+      <UniqueIdentifier>{e673cd1a-b1f6-4ef2-91c4-a110caaaa465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tween">
+      <UniqueIdentifier>{440a2892-3e09-4a7f-880a-84d4ca974e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\display\scene">
+      <UniqueIdentifier>{ee1c7a7c-80c7-4042-b594-14ea427705d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\display\scene">
+      <UniqueIdentifier>{eecc5be4-67f4-44eb-8767-2d184581695e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\board">
+      <UniqueIdentifier>{42dbe1bf-e7ec-499e-a3c1-5694669395ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\aeonlib">
+      <UniqueIdentifier>{6821ade4-45c6-4243-9e66-0f5cdb1a863b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aonlib">
+      <UniqueIdentifier>{71369e4a-8c3f-454a-bdba-5c82895475ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\audio\Audio.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\AudioImp.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\audio\SoundManager.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\InputManager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\MidasGame.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\ServiceManager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\ExitControl.cpp">
+      <Filter>Source Files\display\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\SfxControl.cpp">
+      <Filter>Source Files\display\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\SoundControl.cpp">
+      <Filter>Source Files\display\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\TimerControl.cpp">
+      <Filter>Source Files\display\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\DisplayObject.cpp">
+      <Filter>Source Files\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\GameObject.cpp">
+      <Filter>Source Files\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\TouchObject.cpp">
+      <Filter>Source Files\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unittest\AudioImplTest.cpp">
+      <Filter>Source Files\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unittest\EventManagerTest.cpp">
+      <Filter>Source Files\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\unittest\ServiceManagerTest.cpp">
+      <Filter>Source Files\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\events\EventManager.cpp">
+      <Filter>Source Files\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\Engine.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\Font.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\GlContext.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\Sdl.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\SdlSurface.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\external\include\king\SdlWindow.cpp">
+      <Filter>Source Files\aonlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\ScorePanel.cpp">
+      <Filter>Source Files\display\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\TextObject.cpp">
+      <Filter>Source Files\display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tween\ScaleTo.cpp">
+      <Filter>Source Files\tween</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\display\GameScene.cpp">
+      <Filter>Source Files\display\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\tween\MoveTo.cpp">
+      <Filter>Source Files\tween</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\ScoreManager.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\map\BoardManager.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\map\Board.cpp">
+      <Filter>Source Files\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\core\Timer.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\audio\Audio.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\AudioImp.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\audio\SoundManager.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\InputManager.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\MidasGame.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\ServiceManager.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\ExitControl.h">
+      <Filter>Header Files\display\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\SfxControl.h">
+      <Filter>Header Files\display\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\SoundControl.h">
+      <Filter>Header Files\display\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\TimerControl.h">
+      <Filter>Header Files\display\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\DisplayObject.h">
+      <Filter>Header Files\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\GameObject.h">
+      <Filter>Header Files\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\TextObject.h">
+      <Filter>Header Files\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\TouchObject.h">
+      <Filter>Header Files\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\events\EventData.h">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\events\EventManager.h">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\events\GameEvents.h">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\events\GenericDelegate.h">
+      <Filter>Header Files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\Engine.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\Font.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\GlContext.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\Sdl.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\SdlSurface.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\SdlWindow.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\external\include\king\Updater.h">
+      <Filter>Header Files\aeonlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\ScorePanel.h">
+      <Filter>Header Files\display\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tween\ScaleTo.h">
+      <Filter>Header Files\tween</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tween\Ease.h">
+      <Filter>Header Files\tween</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\display\GameScene.h">
+      <Filter>Header Files\display\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\Timer.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\tween\MoveTo.h">
+      <Filter>Header Files\tween</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\ScoreManager.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\map\BoardManager.h">
+      <Filter>Header Files\board</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\map\Board.h">
+      <Filter>Header Files\board</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
